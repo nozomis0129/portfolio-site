@@ -80,7 +80,7 @@ li {
 .page-header {
     display: flex;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 80px auto;
     padding: 20px 20px 20px 0;
     border-bottom: 1px solid var(--right-gray-color);
 }
@@ -249,6 +249,7 @@ li {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 80px;
 }
 @media all and (max-width: 415px) {
     .navigation-list:last-child {
