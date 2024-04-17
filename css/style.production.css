@@ -137,8 +137,13 @@ li {
 }
 
 .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-top: 20px;
 }
 
@@ -148,8 +153,11 @@ li {
 
 .skill-list{
     width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 #toronto {
