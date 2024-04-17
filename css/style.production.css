@@ -132,22 +132,30 @@ li {
     text-align: center;
 }
 
+.about-title {
+    margin-bottom: 30px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.skills-title {
+    width: 25%
+}
+
+.skill-list{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
 #toronto {
     display: block;
     max-width: 750px;
-    margin: 30px auto;
-}
-
-.skills-table {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    border-collapse: collapse;
-}
-
-.skills-table th,
-.skills-table td {
-    border: 1px solid var(--gray-color);
+    margin: 40px auto;
 }
 
 @keyframes color-change {
