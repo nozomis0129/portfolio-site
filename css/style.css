@@ -82,7 +82,6 @@ li {
     width: 100%;
     margin: 0 auto 80px auto;
     padding: 20px 20px 20px 0;
-    border-bottom: 1px solid var(--right-gray-color);
 }
 
 .page-header__item {
@@ -125,6 +124,14 @@ li {
 
 .portfolio span {
     background-color: var(--background-color);
+}
+
+#index-page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 220px;
 }
 
 /*About*/
@@ -304,6 +311,21 @@ li {
     }
     .portfolio {
         padding: 30px;
+    }
+    .skills {
+        flex-direction: column;
+    }
+    .skill-list {
+        width: 100%;
+    }
+    .skill-list:first-child {
+        margin-left: 0;
+    }
+    .skills-title {
+        width: 100%;
+    }
+    #index-page-footer{
+        margin-top: 100px;
     }
 }
 @media all and (max-width: 750px) {

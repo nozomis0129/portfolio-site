@@ -82,7 +82,6 @@ li {
     width: 100%;
     margin: 0 auto 80px auto;
     padding: 20px 20px 20px 0;
-    border-bottom: 1px solid var(--right-gray-color);
 }
 
 .page-header__item {
@@ -127,6 +126,18 @@ li {
     background-color: var(--background-color);
 }
 
+#index-page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-top: 220px;
+}
 /*About*/
 .about-main {
     text-align: center;
@@ -312,6 +323,24 @@ li {
     }
     .portfolio {
         padding: 30px;
+    }
+    .skills {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .skill-list {
+        width: 100%;
+    }
+    .skill-list:first-child {
+        margin-left: 0;
+    }
+    .skills-title {
+        width: 100%;
+    }
+    #index-page-footer{
+        margin-top: 100px;
     }
 }
 @media all and (max-width: 750px) {
