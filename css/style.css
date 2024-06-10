@@ -49,7 +49,6 @@ button,
     display: inline-block;
     font-family: inherit;
     background-color: var(--background-color);
-    color: var(--secondary-color);
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -267,6 +266,57 @@ li {
     max-width: 200px;
 }
 
+/*Case Study*/
+.case-study-main {
+    margin: 100px;
+}
+
+.biginning {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.biginning-text {
+    padding-right: 30px;
+}
+
+.biginning-subject {
+    margin-top: 40px;
+}
+
+.middle {
+    margin: 100px auto;
+}
+
+.server-side {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 80px;
+}
+
+.server-side-text {
+    margin-right: 30px;
+}
+
+.ui-images {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ui-images img {
+    width: 300px
+}
+
+.ending {
+    width: 100%;
+}
+
+.ending p {
+    margin-bottom: 40px;
+}
+
 /*Footer*/
 .page-footer {
     clear: both;
@@ -345,5 +395,30 @@ li {
         width: 100%;
     }
 }
+@media all and (max-width: 1130px) {
+    .biginning,
+    .server-side {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .code-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+@media all and (max-width: 1300px) {
+    .ui-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 30px;
+    }
 
+    .ui-images img {
+        width: 80%;
+    }
+
+}
