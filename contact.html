@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="X-UA-Compatible" content="IE=11">
     <title>Portfolio</title>
-    <link rel="icon" href="img/3668859_computer_device_electronics_icon.svg">
+    <link rel="icon" href="img/favicon-n.png">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,33 +15,33 @@
 </head>
 <body>
     <header class="page-header">
-        <img src="img/nozomi-logo.png" alt="site logo written Nozomi Sugezawa" class="page-header__item">
+        <a href="index.html" class="name">Nozomi Sugezawa</a>
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                <li role="presentation" class="navigation-item">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
                 </li>
-                <li role="presentation">
+                <li role="presentation" class="navigation-item">
                     <a href="about.html" role="menuitem" class="navigation-list__item" aria-label="Link to the profile page of Nozomi">About</a>
                 </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                <li role="presentation" class="navigation-item">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Contact me</h1>
+        <h1>Get in touch</h1>
         <form action="#" method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">Email: </label>
+            <label class="standard-label" for="contact-name">Name</label>
+            <input type="name" id="contact-name" required>
+
+            <label class="standard-label" for="contact-email">Email</label>
             <input type="email" id="contact-email" required>
 
-            <label class="standard-label" for="contact-message">Message: </label>
+            <label class="standard-label" for="contact-message">Message</label>
             <textarea id="contact-message" maxlength="240" required></textarea>
-            <button class="submit-button">send</button>
+            <button class="submit-button">send message</button>
         </form>
     </main>
     <footer class="page-footer">
